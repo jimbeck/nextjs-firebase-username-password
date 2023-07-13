@@ -1,6 +1,5 @@
 'use client';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { auth } from '../firebase';
@@ -25,7 +24,7 @@ export default function Signup() {
             alt="Your Company"
           />
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white">
-            Sign in to your account
+            Sign up
           </h2>
         </div>
 
@@ -87,9 +86,9 @@ export default function Signup() {
 
             <div>
               <button
-                disabled={!email && !password && !passwordAgain || password !== passwordAgain}
+                disabled={(!email || !password || !passwordAgain) || (password !== passwordAgain)}
                 onClick={() => signup()}
-                className="flex w-full justify-center rounded-md bg-indigo-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                className="disabled:opacity-40 flex w-full justify-center rounded-md bg-indigo-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
                 Sign Up
               </button>
