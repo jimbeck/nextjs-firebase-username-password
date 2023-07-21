@@ -9,7 +9,6 @@ export default function Home() {
       redirect('/signin');
     },
   });
-  console.log(session);
   return (
     <div className="p-8">
       <div className='text-white'>{session?.data?.user?.email }</div>

@@ -6,12 +6,12 @@ import { getFirestore,  } from 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDIdMmjkGoogePdkcNBoYnaWTQbSJAUPrI",
-  authDomain: "rifik-auth-username-password.firebaseapp.com",
-  projectId: "rifik-auth-username-password",
-  storageBucket: "rifik-auth-username-password.appspot.com",
-  messagingSenderId: "656915752501",
-  appId: "1:656915752501:web:15c1706d8e23df3f12337c"
+  apiKey: "AIzaSyAtk_PO-mC9xEZsN8aatyEHdLFkZvt_hTo",
+  authDomain: "next-auth-username-passwords.firebaseapp.com",
+  projectId: "next-auth-username-passwords",
+  storageBucket: "next-auth-username-passwords.appspot.com",
+  messagingSenderId: "78794701925",
+  appId: "1:78794701925:web:d1baa091db025a1da61a8c"
 };
 
 // Initialize Firebase
