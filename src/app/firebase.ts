@@ -6,12 +6,12 @@ import { getFirestore,  } from 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAtk_PO-mC9xEZsN8aatyEHdLFkZvt_hTo",
-  authDomain: "next-auth-username-passwords.firebaseapp.com",
-  projectId: "next-auth-username-passwords",
-  storageBucket: "next-auth-username-passwords.appspot.com",
-  messagingSenderId: "78794701925",
-  appId: "1:78794701925:web:d1baa091db025a1da61a8c"
+  apiKey: "AIzaSyDP6lkgHAu9iHZprgrmwBFvmRkQjEC6bSE",
+  authDomain: "nextauth-passwordless.firebaseapp.com",
+  projectId: "nextauth-passwordless",
+  storageBucket: "nextauth-passwordless.appspot.com",
+  messagingSenderId: "912405577685",
+  appId: "1:912405577685:web:c675f8fd90f93960ce075c"
 };
 
 // Initialize Firebase
